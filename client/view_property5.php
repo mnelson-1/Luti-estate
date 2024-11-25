@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUTI - Real Estate for Social Impact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header class="scrolled"> <!-- NavBar -->
+        <img class="logo" src="src/assets/Logos/Logo blue@2x.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="About.php">About Us</a></li>
+                <li><a href="Opportunities.php">Opportunities</a></li>
+                <li><a href="Donate.php">Donate/Invest</a></li>
+            </ul>
+        </nav>
+        <div>
+            <a class="cta" href="BookAppointment.php"><button class="Header-button">Book Appointment</button></a>
+        </div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+    
+    <!-- View property section starts here -->
+    <section class="view-property">
+
+        <div class="details">
+            <div class="thumb">
+                <div class="big-image">
+                    <img src="images/house-img-6.webp" alt="">
+                </div>
+                <div class="small-images">
+                    <img src="images/house-img-6.webp" alt="">
+                    <img src="images/hall-img-6.webp" alt="">
+                    <img src="images/kitchen-img-6.webp" alt="">
+                    <img src="images/bathroom-img-6.jpg" alt="">
+                </div>
+            </div>
+            <h3 class="name">modern flats and appartments</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span>andheri, mumbai, india - 400104</span></p>
+            <div class="info">
+                <p><i class="fas fa-tag"></i><span>15 lac</span></p>
+                <p><i class="fas fa-user"></i><span>Emeka Chigioke (Agent)</span></p>
+                <p><i class="fas fa-phone"></i><a href="tel:1234567890">1234567890</a></p>
+                <p><i class="fas fa-building"></i><span>flat</span></p>
+                <p><i class="fas fa-house"></i><span>sale</span></p>
+                <p><i class="fas fa-calendar"></i><span>10-11-2022</span></p>
+            </div>
+            <h3 class="title">details</h3>
+            <div class="Op">
+                <div class="op-container">
+                    <p><i>rooms :</i><span>2 BHK</span></p>
+                    <p><i>deposit amount :</i><span>0</span></p>
+                    <p><i>status :</i><span>ready to move</span></p>
+                    <p><i>bedroom :</i><span>3</span></p>
+                    <p><i>bathroom :</i><span>2</span></p>
+                    <p><i>balcony :</i><span>1</span></p>
+                </div>
+                <div class="op-container">
+                    <p><i>carpet area :</i><span>750sqft</span></p>
+                    <p><i>age :</i><span>3 years</span></p>
+                    <p><i>room floor :</i><span>3</span></p>
+                    <p><i>total floors :</i><span>22</span></p>
+                    <p><i>furnished :</i><span>semi-furnished</span></p>
+                    <p><i>loan :</i><span>available</span></p>
+                </div>
+            </div>
+            <h3 class="title">amenities</h3>
+            <div class="Op">
+                <div class="op-container">
+                    <p><i class="fas fa-check"></i><span>lifts</span></p>
+                    <p><i class="fas fa-check"></i><span>security guards</span></p>
+                    <p><i class="fas fa-times"></i><span>play ground</span></p>
+                    <p><i class="fas fa-check"></i><span>gardens</span></p>
+                    <p><i class="fas fa-check"></i><span>water supply</span></p>
+                    <p><i class="fas fa-check"></i><span>power backup</span></p>
+                </div>
+                <div class="op-container">
+                    <p><i class="fas fa-check"></i><span>parking area</span></p>
+                    <p><i class="fas fa-times"></i><span>gym</span></p>
+                    <p><i class="fas fa-check"></i><span>shopping mall</span></p>
+                    <p><i class="fas fa-check"></i><span>hospital</span></p>
+                    <p><i class="fas fa-check"></i><span>schools</span></p>
+                    <p><i class="fas fa-check"></i><span>market area</span></p>
+                </div>
+            </div>
+            <h3 class="title">description</h3>
+            <p class="description">Eko Pearl Towers, Eko Atlantic Apartments by Nairahomes is set in Lagos, 5.4 km from National Museum Lagos and 6.6 km from Freedom Park Lagos. The air-conditioned accommodation is 3.7 km from Red Door Gallery. There is parking on-site and the property offers an electric vehicle charging station.
+
+                With a private bathroom, units at the apartment complex also provide guests with free WiFi, while certain rooms here will provide you with a terrace.
+                
+                The Cathedral Church of Christ is 7 km from the apartment, while Ikoyi Golf Course is 7.1 km away. The nearest airport is Murtala Muhammed International Airport, 24 km from Eko Pearl Towers, Eko Atlantic Apartments by Nairahomes.</p>
+            <form action="" method="post">
+                <input type="submit" value="save property" name="save" class="inline-btn">
+            </form>
+        </div>
+    
+    </section>
+
+
+
+
+    <!-- View property section ends here -->
+    <section class="Chatbot">
+
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="logo-placeholder"><img class="footer-logo" src="src/assets/Logos/Logomark gray@2x.png" alt=""></div>
+                <h3>Real Estate for <br>Social Impact.</h3>
+            </div>
+            
+            <div class="footer-links">
+                <div class="link-group">
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News Room</a></li>
+                        <li><a href="#">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h2>Resources</h42>
+                    <ul>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Opportunities</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="#">Find Properties</a></li>
+                        <li><a href="#">Apply for Aid</a></li>
+                        <li><a href="#">Invest</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-right">
+                <h3>Become a Subscriber</h3>
+                <p>Subscribe to our blog and get the latest updates on <br> houses and opportunities straight to your inbox.</p>
+                <div class="footer-box">
+                    <form action="index.php" method="POST">
+                        <?php
+                            $userEmail = ""; //declaring user email
+                            if(isset($_POST['subscribe'])){ //if subscribe btn is clicked
+                                $userEmail = $_POST['EmailAddress']; //getting user email
+                                if(filter_var($userEmail, FILTER_VALIDATE_EMAIL)){
+                                    $subject = "Thank you for subscribing to LUTI";
+                                    $message = "Thank you for subscribing to LUTI. You will receive updates on our latest properties and opportunities.";
+                                    $sender = "From: benji.chukwu.20@gmail.com";
+                                    if(mail($userEmail, $subject, $message, $sender)){
+                                        echo "Thank you for subscribing to LUTI. You will receive updates on our latest properties and opportunities.";
+                                    } else {
+                                        echo "$userEmail is incorrect";
+                                    }
+                                }
+                            }
+                        ?>
+                        <div class="form-box">
+                            <input type="text" name="EmailAddress" placeholder="Enter your email address" required value="<?php echo $userEmail ?>">
+                            <button type="submit" name="subscribe">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <a href="#">Privacy Policy</a> 
+            <a href="#">Terms of Use</a>  
+            <a href="#">LUTI. Copyright reserved ©2024</a>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="Luti.js"></script>
+</body>
+</html>
