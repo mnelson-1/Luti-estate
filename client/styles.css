@@ -61,8 +61,6 @@ header {
 
 .nav_links li a:hover {
     color: #0088a9;
-    padding-bottom: 0.3rem;
-    border-bottom: #0088a9 0.1rem solid;
 }
 
 .nav_links li a:is(:link,:visited,:active).active {
