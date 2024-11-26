@@ -15,7 +15,7 @@
 </head>
 <body>
     <header class="scrolled"> <!-- NavBar -->
-        <img class="logo" src="src/assets/Logos/Logo blue@2x.png" alt="logo">
+        <img class="logo" src="images/Logo blue@2x.png" alt="logo">
         <nav>
             <ul class="nav_links">
                 <li><a href="index.html">Home</a></li>
@@ -45,11 +45,11 @@
         
         <div class="part_container">
             <section class="partners-logos slider">
-                <div class="slide"><img src="src/assets/Partners/Access_Bank.png"></div>
-                <div class="slide"><img src="src/assets/Partners/Julius_Berger_PLC.png"></div>
-                <div class="slide"><img src="src/assets/Partners/olaniwun_png.png"></div>
-                <div class="slide"><img src="src/assets/Partners/Softcom.png"></div>
-                <div class="slide"><img src="src/assets/Partners/UN_Habitat.png"></div>
+                <div class="slide"><img src="images/Access_Bank.png"></div>
+                <div class="slide"><img src="images/Julius_Berger_PLC.png"></div>
+                <div class="slide"><img src="images/olaniwun_png.png"></div>
+                <div class="slide"><img src="images/Partners/Softcom.png"></div>
+                <div class="slide"><img src="images/Partners/UN_Habitat.png"></div>
             </section>
         </div>
     </section>
@@ -90,7 +90,7 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-left">
-                <div class="logo-placeholder"><img class="footer-logo" src="src/assets/Logos/Logomark gray@2x.png" alt=""></div>
+                <div class="logo-placeholder"><img class="footer-logo" src="images/Logomark gray@2x.png" alt=""></div>
                 <h3>Real Estate for <br>Social Impact.</h3>
             </div>
             
@@ -125,25 +125,9 @@
                 <h3>Become a Subscriber</h3>
                 <p>Subscribe to our blog and get the latest updates on <br> houses and opportunities straight to your inbox.</p>
                 <div class="footer-box">
-                    <form action="index.php" method="POST">
-                        <?php
-                            $userEmail = ""; //declaring user email
-                            if(isset($_POST['subscribe'])){ //if subscribe btn is clicked
-                                $userEmail = $_POST['EmailAddress']; //getting user email
-                                if(filter_var($userEmail, FILTER_VALIDATE_EMAIL)){
-                                    $subject = "Thank you for subscribing to LUTI";
-                                    $message = "Thank you for subscribing to LUTI. You will receive updates on our latest properties and opportunities.";
-                                    $sender = "From: benji.chukwu.20@gmail.com";
-                                    if(mail($userEmail, $subject, $message, $sender)){
-                                        echo "Thank you for subscribing to LUTI. You will receive updates on our latest properties and opportunities.";
-                                    } else {
-                                        echo "$userEmail is incorrect";
-                                    }
-                                }
-                            }
-                        ?>
+                    <form action="index.html" method="POST">
                         <div class="form-box">
-                            <input type="text" name="EmailAddress" placeholder="Enter your email address" required value="<?php echo $userEmail ?>">
+                            <input type="text" name="EmailAddress" placeholder="Enter your email address">
                             <button type="submit" name="subscribe">Subscribe</button>
                         </div>
                     </form>
