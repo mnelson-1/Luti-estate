@@ -188,24 +188,8 @@
                 <p>Subscribe to our blog and get the latest updates on <br> houses and opportunities straight to your inbox.</p>
                 <div class="footer-box">
                     <form action="index.php" method="POST">
-                        <?php
-                            $userEmail = ""; //declaring user email
-                            if(isset($_POST['subscribe'])){ //if subscribe btn is clicked
-                                $userEmail = $_POST['EmailAddress']; //getting user email
-                                if(filter_var($userEmail, FILTER_VALIDATE_EMAIL)){
-                                    $subject = "Thank you for subscribing to LUTI";
-                                    $message = "Thank you for subscribing to LUTI. You will receive updates on our latest properties and opportunities.";
-                                    $sender = "From: benji.chukwu.20@gmail.com";
-                                    if(mail($userEmail, $subject, $message, $sender)){
-                                        echo "Thank you for subscribing to LUTI. You will receive updates on our latest properties and opportunities.";
-                                    } else {
-                                        echo "$userEmail is incorrect";
-                                    }
-                                }
-                            }
-                        ?>
                         <div class="form-box">
-                            <input type="text" name="EmailAddress" placeholder="Enter your email address" required value="<?php echo $userEmail ?>">
+                            <input type="text" name="EmailAddress" placeholder="Enter your email address">
                             <button type="submit" name="subscribe">Subscribe</button>
                         </div>
                     </form>
